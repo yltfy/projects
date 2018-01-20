@@ -1,0 +1,137 @@
+/* =========================== contack start ================================= */
+.contact {
+	height: 570px;
+	position: fixed;
+	top: 50%;
+	margin-top: -285px;
+	right: 0;
+	color: #fff;
+	font-size: 14px;
+	z-index: 10000009;
+	cursor: pointer;
+}
+
+.contact .cuBox {
+	position: absolute;
+	right: 0;
+	bottom: 160px;
+	width: 116px;
+	height: 48px;
+	border-radius: 5px;
+	background: url("../images/cu-bg.jpg") no-repeat center center;
+	box-shadow: 6px 6px 18px 6px rgba(255, 138, 166, 0.4);
+	overflow: hidden;
+}
+
+.contact .cuBox h6 {
+	width: 100%;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	font-weight: normal;
+	font-size: 16px;
+	margin-bottom: -6px;
+}
+
+.contact .cuBox .firstTitle {
+	margin-bottom: 0;
+}
+
+.contact .cuBox .cuNum {
+	width: 216px;
+	margin: 0 12px;
+	padding-bottom: 16px;
+	border-bottom: 1px dashed #ffb7a4;
+}
+
+.contact .cuBox .cuNum p {
+	padding-left: 30px;
+	line-height: 14px;
+}
+
+.contact .cuBox .cuNum .qq {
+	margin-bottom: 12px;
+}
+
+.contact .cuBox .cuNum .qq2 {
+	margin-bottom: 12px;
+}
+
+.contact .cuBox .cuNum .phone {
+}
+
+.contact .cuBox .weixin {
+	width: 216px;
+	height: 124px;
+	margin: 0 12px;
+	padding-bottom: 16px;
+	border-bottom: 1px dashed #ffb7a4;
+}
+
+.contact .cuBox .weixin dl {
+	margin: 0 auto;
+	width: 100px;
+}
+
+.contact .cuBox .weixin dl dt {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 10px;
+}
+
+.contact .cuBox .weixin dl dt img {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+}
+
+.contact .cuBox .weixin dl dd {
+	height: 14px;
+	text-align: center;
+}
+
+.contact .cuBox .weixin .code2 {
+	margin-left: 16px;
+}
+
+.contact .cuBox .ontime {
+	text-align: center;
+}
+
+.contact .cuBox .ontime p {
+	height: 14px;
+	margin-bottom: 6px;
+}
+
+.contact .psBox {
+	position: absolute;
+	top: 410px;
+	right: 0;
+	width: 116px;
+	height: 48px;
+	border-radius: 5px;
+	background: url("../images/ps-bg.jpg") no-repeat center center;
+	box-shadow: 6px 6px 18px 6px rgba(178, 129, 248, 0.4);
+	overflow: hidden;
+}
+
+.contact .psBox h6 {
+	width: 100%;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	font-weight: normal;
+	font-size: 16px;
+	margin-bottom: -4px;
+}
+
+.contact .psBox .firstTitle {
+	margin-bottom: 0;
+}
+
+.contact .psBox img {
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	background-color: #fff;
+}

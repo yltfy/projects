@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>服务-夜幕安全</title>
+		<base target="_blank" />
+		<link rel="shortcut icon" href="images/Clover.ico" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/service.css">
+		<link rel="stylesheet" type="text/css" href="css/contact.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/backtop.css" />
+		<style type="text/css">
+			.footer {
+				top: 80%;
+			}
+		</style>
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/common/utils.js"></script>
+		<script type="text/javascript" src="js/common/allMove.js"></script>
+		<script src="js/service.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<div class="logo">
+				<a href="#"></a>
+				<img src="images/moon.png" alt="">
+			</div>
+			<div class="logopic">
+				<a style="font-size: 36px; color: #fff;">夜幕安全</a>
+			</div>
+			<nav>
+				<div class="navdiv">
+					<a href="index.html" target="_self">首页</a>
+				</div>
+				<div class="navdiv">
+					<a href="service.html">主要服务</a>
+				</div>
+				<div class="navdiv">
+					<a href="profile.html">夜幕简介</a>
+				</div>
+				<div class="navdiv">
+					<a href="enter.html">在线报名</a>
+				</div>
+				<div class="navdiv">
+					<a href="vip.html">会员福利</a>
+				</div>
+			</nav>
+		</header>
+		<div id="forlogin" style="position: absolute; top: 50px;left: 200px;">
+			<span class="login" style="cursor: pointer;" id="navLogin">登录</span>
+			<span class="login">|</span>
+			<span class="login" style="cursor: pointer;" id="navSingup">注册</span>
+		</div>
+		<!-- 雪花动画效果 -->
+		<div id="snowMask" style="display: block;"></div>
+		<style type="text/css">
+			@keyframes snow {
+				0% {
+					background-position: 0 0, 0 0;
+				}
+				100% {
+					background-position: 500px 1000px, 500px 500px;
+				}
+			}
+			
+			@-webkit-keyframes snow {
+				0% {
+					background-position: 0 0, 0 0;
+				}
+				100% {
+					background-position: 500px 1000px, 500px 500px;
+				}
+			}
+			
+			#snowMask {
+				position: fixed;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				z-index: 999;
+				background: url('images/snow1.png'), url('images/snow2.png');
+				pointer-events: none;
+				-webkit-animation: snow 15s linear infinite;
+				animation: snow 15s linear infinite;
+			}
+		</style>
+		<script type="text/javascript">
+			(function() {
+				var snowMask = document.getElementById('snowMask');
+
+				function isIE() {
+					if(!!window.ActiveXObject || "ActiveXObject" in window)
+						return true;
+					else
+						return false;
+				}
+				snowMask.style.display = (!isIE()) ? "block" : "none";
+			})();
+		</script>
+		<!-- end snow-->
+		
+		<div class="content">
+			<div class="outer" imgstyle="z-index:10;">
+				<div class="inner">
+
+					<img src="" alt="">
+				</div>
+			</div>
+			<div class="outer" style="z-index:9;">
+				<div class="inner">
+
+					<img src="" alt="">
+				</div>
+			</div>
+			<div class="outer" style="z-index:8;">
+				<div class="inner">
+
+					<img src="" alt="">
+				</div>
+			</div>
+			<div class="outer" style="z-index:7;">
+				<div class="inner">
+
+					<img src="" alt="">
+				</div>
+			</div>
+			<div class="outer" style="z-index:6;">
+				<div class="inner">
+					<img src="" alt="">
+				</div>
+			</div>
+			<div class="outer" style="z-index:5;">
+				<div class="inner">
+					<img src="" alt="">
+				</div>
+			</div>
+
+			<div class="outer" style="z-index:4;">
+				<div class="inner">
+					<div id="coming">
+						<h2>To be continue</h2></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="right">
+			<div class="contro" style="display:block">
+				<h1>淘宝首页规划</h1>
+				<p>June 2014</p>
+				<h3>1,使用定位、浮动、背景图片处理完成页面布局</h3>
+				<h3>2,使用源生JS完成页面中主要的JS效果</h3>
+				<h3>3,处理IE6下的兼容问题</h3>
+				<a href="#" class="cir"></a>
+
+			</div>
+			<div class="contro">
+				<h1>CANVAS模仿Matrix片头</h1>
+				<p>June 2014</p>
+				<h3>1,生成一定数量的数组，循环分组分配X、Y值</h3>
+				<h3>2,定时器不停重复生成文字分配给数组内每个值</h3>
+				<h3>3,同时用CANVAS写入文字，不停改变Y值，反复重新绘制</h3>
+				<a href="#" class="cir"></a>
+			</div>
+			<div class="contro">
+				<h1>JS贪吃蛇小游戏</h1>
+				<p>May 2014</p>
+				<h3>1,JS生成地图，定时器控制蛇身前进，把蛇的每个位置存入数组，每次前进进行数组操作</h3>
+				<h3>2,用事件处理键盘方向控制，每次碰撞苹果把苹果并入蛇的数组，再在排除蛇的位置随机生成苹果,重新启动定时器，达到越来越快的效果</h3>
+				<h3>3,做出各种情况判断检测</h3>
+				<a href="#" class="cir"></a>
+
+			</div>
+			<div class="contro">
+				<h1>手机菜单弹出小效果</h1>
+				<p>June s2014</p>
+				<h3>1,模拟了手机点击弹出收缩一个菜单的效果</h3>
+				<h3>2,使用了多段函数执行实现变化过程</h3>
+				<h3>3,使用CSS旋转角度完成转圈</h3>
+				<a href="#" class="cir"></a>
+			</div>
+
+			<div class="contro">
+				<h1>放大镜小效果</h1>
+				<p>June 2014</p>
+				<h3>1,鼠标事件处理鼠标移入出现一个随鼠标移动的透明层</h3>
+				<h3>2,事件属性提取透明层所选取的坐标位置</h3>
+				<h3>3,计算选取图片中的坐标位置生成在后侧位置</h3>
+				<a href="#" class="cir"></a>
+			</div>
+
+			<div class="contro">
+				<h1>仿荣事达网站视觉差小效果</h1>
+				<p>June 2014</p>
+				<h3>1,事件属性提取各个元素长宽，计算元素起始位置</h3>
+				<h3>2,鼠标移动事件计算各个元素分别以不同的速度跟随鼠标改变定位的TOP和LEFT值</h3>
+				<h3>3,BOM操作处理窗口改变，使元素依然处在居中位置</h3>
+				<a href="#" class="cir"></a>
+
+			</div>
+			<div class="contro">
+				<h1>即将到来</h1>
+				<p>????</p>
+				<h3>coming soon</h3>
+
+				<a href="#" class="cir"></a>
+			</div>
+		</div>
+
+		<!-- contact start-->
+		<div class="contact" id="contact">
+			<div class="cuBox" style="width: 116px; height: 48px;">
+				<h6 class="firstTitle">联系我们</h6>
+				<div class="cuNum">
+					<p class="qq">2582255 2582255</p>
+					<p class="qq2">2582255</p>
+					<p class="phone">010-2582255</p>
+				</div>
+				<h6>在线微信客服</h6>
+				<div class="weixin">
+					<dl>
+						<dt><img src="images/cool.jpg" alt=""></dt>
+						<dd>客服1</dd>
+					</dl>
+				</div>
+				<h6>客服在线时间</h6>
+				<div class="ontime">
+					<p>周一至周六夜午：9:00~12:00</p>
+					<p>下午：13:30~18:00</p>
+				</div>
+			</div>
+			<div class="psBox">
+				<h6 class="firstTitle">夜幕公众号</h6>
+				<img src="images/cool.jpg" alt="">
+			</div>
+		</div>
+		<!-- end contact-->
+
+		<!-- footer start -->
+		<div class="footer">
+			<div class="f_main">
+				<div class="f_logo fl">
+					<a href="/"></a>
+				</div>
+				<div class="f_copy fl">
+					<p>
+						<a href="#">dns/http监控平台</a>|
+						<a href="#">xss平台</a>|
+						<a href="#">乌云漏洞</a>|
+						<a href="#">社区</a>|
+						<a href="#">夜幕安全博客</a>|
+						<a href="#">在线漏洞检测</a>|
+						<!--<a href="#">加入我们</a>|<a href="#">网站地图</a><a href="#">联系我们</a>|-->
+						<a href="#">在线留言</a>|
+						<a href="#" target="_blank">常见问题</a>
+					</p><br>
+					<p><span>夜幕安全 版权所有</span></p>
+				</div>
+			</div>
+		</div>
+		<!-- end footer -->
+
+		<!-- back_top start -->
+		<div class="backTop" id="backTop" data-backtop="javascript">&nbsp;</div>
+		<!-- end back_top -->
+
+		<script type="text/javascript" src="js/contact.js"></script>
+		<script type="text/javascript" src="js/backtop.js"></script>
+		<script type="text/javascript" src="js/login.js" ></script>
+	</body>
+
+</html>

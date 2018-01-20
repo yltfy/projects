@@ -1,0 +1,398 @@
+/* =========================== vip start ================================= */
+@charset "UTF-8";
+.header {
+	height: 70px;
+	background: #fff;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .1);
+	position: relative;
+	z-index: 9
+}
+
+.header.fixedTop {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 11
+}
+
+.header .topMain {
+	width: 1200px;
+	margin: 0 auto;
+	height: 70px;
+	padding-top: 1px
+}
+
+.header .topMain .logo {
+	width: 96px;
+	height: 96px;
+	float: left;
+	margin-top: 24px
+}
+
+.header .topMain .menu {
+	height: 30px;
+	float: left;
+	margin-top: 22px;
+	margin-left: 167px
+}
+
+.header .topMain .menu li {
+	margin-right: 18px;
+	display: block;
+	float: left;
+	height: 30px;
+	line-height: 30px
+}
+
+.header .topMain .menu li.active {
+	background: #e15671;
+	border-radius: 15px;
+	color: #fff
+}
+
+.header .topMain .menu li.active a {
+	color: #fff
+}
+
+.header .topMain .menu li:hover {
+	background: #e15671;
+	border-radius: 15px;
+	color: #fff
+}
+
+.header .topMain .menu li:hover a {
+	color: #fff
+}
+
+.header .topMain .menu li a {
+	padding: 0 20px;
+	display: block;
+	color: #444d59
+}
+
+.header .topMain .loginBox {
+	width: 150px;
+	float: right;
+	text-align: center;
+	line-height: 70px;
+	cursor: pointer;
+	position: relative;
+	z-index: 99
+}
+
+@-webkit-keyframes font {
+	0% {
+		font-size: 14px;
+	}
+	25% {
+		font-size: 20px;
+	}
+	50% {
+		font-size: 16px;
+	}
+	75% {
+		font-size: 18px;
+	}
+	100% {
+		font-size: 14px;
+	}
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background: #000;
+	background-size: cover;
+	perspective: 1200px;
+	transform-style: preserve-3d;
+	font-family: '微软雅黑';
+}
+
+#wrap {
+	width: 900px;
+	height: 600px;
+	margin: auto;
+	position: absolute;
+	left: 0;
+	top: calc(50% - 300px);
+	right: 0;
+	overflow: hidden;
+}
+
+#main {
+	width: 100%;
+	height: 100%;
+	transition: 0.3s;
+	position: relative;
+}
+
+#circle_wrap {
+	width: 500px;
+	height: 500px;
+	border: 1px solid rgba(255, 255, 255, 0.6);
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	background: -webkit-radial-gradient(rgba(82, 165, 206, 0.8), rgba(82, 165, 206, 0));
+	z-index: 2;
+}
+
+#circle_wrap .circle {
+	width: 200px;
+	height: 200px;
+	border: 1px solid rgba(255, 255, 255, 0.8);
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	background: -webkit-radial-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+	box-sizing: border-box;
+	padding-top: 13%;
+	z-index: 1;
+}
+
+#circle_wrap .circle div {
+	text-align: center;
+	color: #848cad;
+	font-size: 26px;
+}
+
+#circle_dot div,
+#circle_line div {
+	width: 2px;
+	height: 2px;
+	background: rgba(255, 255, 255, 0.3);
+	position: absolute;
+}
+
+#svg {
+	position: relative;
+	z-index: 3;
+}
+
+#svg g:hover circle {
+	fill: rgba(255, 255, 255, .8);
+	stroke: rgba(231, 143, 143, 0.3);
+	transition: .3s;
+}
+
+#svg g:hover text {
+	fill: rgba(255, 255, 255, 1);
+	font-size: 14px;
+	animation: font .4s;
+}
+
+.banner {
+	height: 822px;
+	position: relative;
+}
+
+.banner .inf {
+	width: 1200px;
+	height: 120px;
+	position: absolute;
+	bottom: -2px;
+	left: 50%;
+	margin-left: -600px
+}
+
+.banner .inf .box {
+	width: 300px;
+	height: 99px;
+	float: left;
+	padding-top: 21px
+}
+
+.banner .inf .box.one {
+	background: #d72bb9
+}
+
+.banner .inf .box.one .iconImg {
+	background-image: url('../images/help.ico');
+	background-repeat: no-repeat
+}
+
+.banner .inf .box.two {
+	background: #ffb400
+}
+
+.banner .inf .box.two .iconImg {
+	background-image: url('../images/help.ico');
+	background-repeat: no-repeat;
+}
+
+.banner .inf .box.thr {
+	background: #2bc2d7
+}
+
+.banner .inf .box.thr .iconImg {
+	background-image: url('../images/help.ico');
+	background-repeat: no-repeat;
+}
+
+.banner .inf .box.fou {
+	background: #96d464
+}
+
+.banner .inf .box.fou .iconImg {
+	background-image: url('../images/help.ico');
+	background-repeat: no-repeat;
+}
+
+.banner .inf .box .iconImg {
+	width: 60px;
+	height: 50px;
+	margin: 0 auto;
+	display: block
+}
+
+.banner .inf .box .text {
+	height: 69px;
+	text-align: center
+}
+
+.banner .inf .box .text span {
+	line-height: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 18px;
+	color: #fff;
+	padding: 0 10px
+}
+
+.banner .inf .box .text em {
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle
+}
+
+.secP {
+	width: 100%;
+	height: 490px;
+	position: relative;
+	background: #f9f9f9;
+	margin: auto;
+}
+
+.secP .main {
+	position: absolute;
+	left: 50%;
+	margin-left: -600px;
+}
+
+.secP .title {
+	height: 100px;
+	padding: 40px 0 20px 0
+}
+
+.secP .title i {
+	width: 60px;
+	height: 51px;
+	display: block;
+	margin: 0 auto;
+	background: url('../images/help.ico') no-repeat
+}
+
+.secP .title span {
+	display: block;
+	height: 55px;
+	font-size: 28px;
+	color: #282828;
+	text-align: center;
+	line-height: 55px
+}
+
+.secP .quesBox {
+	width: 320px;
+	height: auto;
+	background: #fff;
+	box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, .2);
+	margin: 0 0 30px 30px;
+	padding: 0 30px;
+	float: left
+}
+
+.secP .quesBox.first-child {
+	margin: 0 0 30px 0
+}
+
+.secP .quesBox .ques {
+	border-bottom: 1px dashed #ededed;
+	color: #a2a2a2;
+	padding: 20px 0
+}
+
+.secP .quesBox .ques .headIcon {
+	margin-right: 10px;
+	background: url('../images/forhelp.png') no-repeat
+}
+
+.secP .quesBox .answ {
+	color: #575757;
+	padding: 20px 0
+}
+
+.secP .quesBox .answ .headIcon {
+	margin-left: 10px;
+	background: url('../images/answer.ico') no-repeat
+}
+
+.secP .quesBox .text {
+	width: 256px;
+	line-height: 30px;
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: middle
+}
+
+.secP .quesBox .text.ans {
+	height: 96px;
+	overflow: hidden
+}
+
+.secP .quesBox .headIcon {
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	vertical-align: middle
+}
+
+.secP .btnLine {
+	height: 60px;
+	text-align: center;
+	position: relative;
+	bottom: -435px
+}
+
+.secP .btnLine .btn {
+	width: 120px;
+	height: 28px;
+	border-radius: 14px;
+	overflow: hidden;
+	cursor: pointer;
+	background: #f4617d;
+	background: rgba(255, 86, 113, .8);
+	color: #fff;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 14px;
+	line-height: 28px;
+	transition: .5s
+}
+
+.secP .btnLine .btn:hover {
+	background: #ff5671
+}

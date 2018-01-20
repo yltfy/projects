@@ -1,0 +1,625 @@
+
+/*=====================================nav start ========================================*/
+.header {
+	height: 70px;
+	background: #fff;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .1);
+	position: relative;
+	z-index: 9
+}
+
+.header.fixedTop {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 11
+}
+
+.header .topMain {
+	width: 1200px;
+	margin: 0 auto;
+	height: 70px;
+	padding-top: 1px
+}
+
+.header .topMain .logo {
+	width: 96px;
+	height: 96px;
+	float: left;
+	margin-top: 24px
+}
+
+.header .topMain .menu {
+	height: 30px;
+	float: left;
+	margin-top: 22px;
+	margin-left: 167px
+}
+
+.header .topMain .menu li {
+	margin-right: 18px;
+	display: block;
+	float: left;
+	height: 30px;
+	line-height: 30px
+}
+
+.header .topMain .menu li.active {
+	background: #e15671;
+	border-radius: 15px;
+	color: #fff
+}
+
+.header .topMain .menu li.active a {
+	color: #fff
+}
+
+.header .topMain .menu li:hover {
+	background: #e15671;
+	border-radius: 15px;
+	color: #fff
+}
+
+.header .topMain .menu li:hover a {
+	color: #fff
+}
+
+.header .topMain .menu li a {
+	padding: 0 20px;
+	display: block;
+	color: #444d59
+}
+
+.header .topMain .loginBox {
+	width: 150px;
+	float: right;
+	text-align: center;
+	line-height: 70px;
+	cursor: pointer;
+	position: relative;
+	z-index: 99
+}
+
+/*===================================== end nav ========================================*/
+
+
+/*=====================================content start ========================================*/
+
+.content {
+	min-height: 700px;
+}
+
+.content.bglogin {
+	background: #000000;
+	background-size: 100%
+}
+
+.content .main {
+	width: 300px;
+	margin: 0 auto;
+	padding: 106px 0 70px
+}
+
+.content .main .logo {
+	height: 44px;
+	text-align: center
+}
+
+.content .main .logo em {
+	height: 100%;
+	width: 1px;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	vertical-align: middle
+}
+
+.content .main .logo img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.content .main .title {
+	height: 31px;
+	text-align: center;
+	line-height: 31px;
+	color: #e15671;
+	font-size: 20px;
+	padding-bottom: 6px
+}
+
+.content .main .title.success {
+	font-size: 24px;
+	color: #2bc2d7
+}
+
+.content .main .step2 {
+	height: 60px;
+	position: relative
+}
+
+.content .main .step2.stepO .step .num {
+	width: 52px;
+	height: 32px;
+	background: url('/img/pc/login/step.png') no-repeat;
+	text-align: left;
+	padding-left: 12px;
+	border-radius: 0;
+	border: 0;
+	color: #e15671
+}
+
+.content .main .step2.stepO .step .text {
+	color: #e15671
+}
+
+.content .main .step2.stepO .step.fr .num {
+	width: 32px;
+	height: 32px;
+	background: url('/img/pc/login/step2.png') no-repeat;
+	text-align: center;
+	line-height: 32px;
+	color: #6a6c81;
+	border-radius: 50%;
+	margin: 0 auto;
+	padding: 0
+}
+
+.content .main .step2.stepT .lineL {
+	background: #e15671
+}
+
+.content .main .step2.stepT .step .num {
+	background: url('/img/pc/login/step3.png') no-repeat;
+	color: #e15671
+}
+
+.content .main .step2.stepT .step .text {
+	color: #e15671
+}
+
+.content .main .step2 .step {
+	width: 80px;
+	text-align: center
+}
+
+.content .main .step2 .step .num {
+	width: 32px;
+	height: 32px;
+	background: url('/img/pc/login/step2.png') no-repeat;
+	text-align: center;
+	line-height: 32px;
+	color: #6a6c81;
+	border-radius: 50%;
+	margin: 0 auto
+}
+
+.content .main .step2 .step .text {
+	height: 28px;
+	line-height: 28px
+}
+
+.content .main .step2 .lineL {
+	width: 184px;
+	height: 3px;
+	background: #6a6c81;
+	position: absolute;
+	top: 15px;
+	left: 58px
+}
+
+.content .main .step3 {
+	height: 60px;
+	position: relative
+}
+
+.content .main .step3.stepO .step.fl .num {
+	width: 52px;
+	height: 32px;
+	background: url('/img/pc/login/step.png') no-repeat;
+	text-align: left;
+	padding-left: 12px;
+	border-radius: 0;
+	border: 0;
+	color: #e15671
+}
+
+.content .main .step3.stepO .step.fl .text {
+	color: #e15671
+}
+
+.content .main .step3.stepO .step.center .num {
+	background: url('/img/pc/login/step2.png') no-repeat
+}
+
+.content .main .step3.stepO .step.fr .num {
+	background: url('/img/pc/login/step2.png') no-repeat
+}
+
+.content .main .step3.stepT .step .num {
+	background: url('/img/pc/login/step3.png') no-repeat;
+	color: #e15671
+}
+
+.content .main .step3.stepT .step.center {
+	margin-left: 40px
+}
+
+.content .main .step3.stepT .step.center .num {
+	width: 52px;
+	height: 32px;
+	background: url('/img/pc/login/step.png') no-repeat;
+	text-align: left;
+	padding-left: 12px;
+	border-radius: 0;
+	border: 0;
+	color: #e15671
+}
+
+.content .main .step3.stepT .step .text {
+	color: #e15671
+}
+
+.content .main .step3.stepT .step.fr .num {
+	background: url('/img/pc/login/step2.png') no-repeat;
+	color: #6a6c81
+}
+
+.content .main .step3.stepT .step.fr .text {
+	color: #7f8199
+}
+
+.content .main .step3.stepT .linesL {
+	background: #e15671
+}
+
+.content .main .step3.stepS .linesL {
+	background: #e15671
+}
+
+.content .main .step3.stepS .linesR {
+	background: #e15671
+}
+
+.content .main .step3.stepS .step .num {
+	background: url('/img/pc/login/step3.png') no-repeat;
+	color: #e15671
+}
+
+.content .main .step3.stepS .step .text {
+	color: #e15671
+}
+
+.content .main .step3 .step {
+	width: 80px;
+	text-align: center;
+	position: relative;
+	z-index: 6
+}
+
+.content .main .step3 .step.center {
+	float: left;
+	margin-left: 30px
+}
+
+.content .main .step3 .step .num {
+	width: 32px;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	color: #6a6c81;
+	border-radius: 50%;
+	margin: 0 auto
+}
+
+.content .main .step3 .step .text {
+	height: 28px;
+	line-height: 28px
+}
+
+.content .main .step3 .linesL {
+	width: 70px;
+	height: 3px;
+	background: #6a6c81;
+	position: absolute;
+	top: 15px;
+	left: 58px
+}
+
+.content .main .step3 .linesR {
+	width: 70px;
+	height: 3px;
+	background: #6a6c81;
+	position: absolute;
+	top: 15px;
+	right: 58px
+}
+
+.content .main .inpline {
+	height: 40px;
+	margin-top: 30px
+}
+
+.content .main .inpline input,
+.content .main .inpline button {
+	font-family: Microsoft Yahei
+}
+
+.content .main .inpline .inpL {
+	width: 278px;
+	height: 18px;
+	border: 1px solid #fff;
+	border-radius: 19px;
+	padding: 10px;
+	display: inline-block;
+	cursor: text;
+	position: relative
+}
+
+.content .main .inpline .inpL.active {
+	background: #fff
+}
+
+.content .main .inpline .inpL.active span {
+	color: #444d59
+}
+
+.content .main .inpline .inpL.active input {
+	color: #444d59
+}
+
+.content .main .inpline .inpL span {
+	width: 278px;
+	height: 18px;
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+
+.content .main .inpline .inpL input {
+	width: 278px;
+	height: 18px;
+	color: #fff;
+	text-align: center;
+	float: left
+}
+
+.content .main .inpline .inpS {
+	width: 158px;
+	height: 18px;
+	border: 1px solid #fff;
+	border-radius: 19px;
+	padding: 10px;
+	display: inline-block;
+	cursor: text;
+	float: left;
+	position: relative
+}
+
+.content .main .inpline .inpS.active {
+	background: #fff
+}
+
+.content .main .inpline .inpS.active input {
+	color: #444d59
+}
+
+.content .main .inpline .inpS.active span {
+	color: #444d59
+}
+
+.content .main .inpline .inpS span {
+	width: 158px;
+	height: 18px;
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	left: 0
+}
+
+.content .main .inpline .inpS input {
+	width: 158px;
+	height: 18px;
+	color: #fff;
+	text-align: center;
+	float: left
+}
+
+.content .main .inpline .btns {
+	width: 108px;
+	height: 38px;
+	border: 1px solid #c686f6;
+	border-radius: 19px;
+	color: #c686f6;
+	float: right
+}
+
+.content .main .inpline .btn {
+	width: 298px;
+	height: 38px;
+	border: 1px solid #c686f6;
+	border-radius: 19px;
+	background: #c686f6;
+	color: #fff
+}
+
+.content .main .inpline .img {
+	width: 110px;
+	height: 40px;
+	float: right;
+	cursor: pointer
+}
+
+.content .main .inpline .img img {
+	width: 110px;
+	height: 40px
+}
+
+.content .main .textlineM {
+	padding-top: 14px;
+	height: 45px;
+	line-height: 20px;
+	color: #fff
+}
+
+.content .main .textlineM.center {
+	text-align: center
+}
+
+.content .main .textlineM.center em {
+	color: #2bc2d7;
+	padding: 10px 0;
+	display: inline-block;
+	clear: both;
+	width: 100%;
+	font-size: 18px
+}
+
+.content .main .textline {
+	height: 45px;
+	line-height: 45px;
+	color: #fff
+}
+
+.content .main .textline.center {
+	text-align: center
+}
+
+.content .main .textline.center span {
+	float: none
+}
+
+.content .main .textline em {
+	float: left
+}
+
+.content .main .textline em a {
+	color: #fff
+}
+
+.content .main .textline span {
+	float: right
+}
+
+.content .main .textline span a {
+	color: #e15671
+}
+
+.content .main .third {
+	height: 40px;
+	padding-top: 25px;
+	text-align: center;
+	opacity: .7;
+	cursor: pointer
+}
+
+.content .main .third.success {
+	opacity: 1
+}
+
+.content .main .third img {
+	display: inline-block
+}
+
+.content .main .third em {
+	display: inline-block;
+	line-height: 28px;
+	height: 28px;
+	border: 1px solid #e15671;
+	padding: 0 15px;
+	border-radius: 14px;
+	margin: 0 10px;
+	color: #e15671
+}
+
+.content .main .third span {
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 40px;
+	color: #fff;
+	padding-right: 10px
+}
+
+.content .main .third span a {
+	color: #e15671
+}
+
+.content .main .third i {
+	width: 40px;
+	height: 40px;
+	background-image: url('/img/pc/icon.png');
+	background-repeat: no-repeat;
+	background-size: 325px 131px;
+	background-position: -220px -40px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: middle
+}
+
+.content .main .sucImg {
+	height: 160px;
+	text-align: center
+}
+
+.content .main .sucImg em {
+	height: 100%;
+	width: 1px;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	vertical-align: middle
+}
+
+.content .main .sucImg img {
+	display: inline-block;
+	vertical-align: middle
+}
+
+.content .note {
+	width: 448px;
+	height: 80px;
+	border: 1px solid #793d52;
+	border-radius: 7px;
+	background: url('/img/pc/markBg.png') repeat;
+	position: relative;
+	left: 50%;
+	margin-left: -224px;
+	text-align: center;
+	margin-top: 20px
+}
+
+.content .note em {
+	height: 100%;
+	vertical-align: middle;
+	display: inline-block;
+	width: 1px
+}
+
+.content .note .noteIcon {
+	width: 30px;
+	height: 30px;
+	background: url('/img/pc/icon.png') no-repeat 0 -90px;
+	display: inline-block;
+	vertical-align: middle
+}
+
+.content .note .noteText {
+	width: 374px;
+	line-height: 24px;
+	display: inline-block;
+	vertical-align: middle;
+	color: #fff;
+	font-size: 14px
+}
+
+/*===================================== end content ========================================*/

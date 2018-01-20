@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>vip-夜幕安全</title>
+		<link rel="shortcut icon" href="images/Clover.ico" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/vip.css" />
+		<link rel="stylesheet" href="css/contact.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/backtop.css" />
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/common/utils.js"></script>
+		<script type="text/javascript" src="js/common/allMove.js"></script>
+		<script type="text/javascript" src="data.js"></script>
+		<script type="text/javascript" src="js/vip.js"></script>
+	</head>
+
+	<body>
+		<!-- navigator start -->
+		<div class="header">
+			<div class="topMain">
+				<h1 class="logo">
+					<a href="#">
+						<img src="images/moon.png">
+					</a>
+				</h1>
+				<div class="menu">
+					<ul>
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="service.html">主要服务</a>
+						</li>
+						<li>
+							<a href="profile.html">夜幕简介</a>
+						</li>
+						<li>
+							<a href="enter.html">在线报名</a>
+						</li>
+						<li class="active">
+							<a href="vip.html">会员福利</a>
+						</li>
+					</ul>
+				</div>
+				<div class="loginBox">
+					<a href="#" id="navLogin">登录</a>
+					<span>|</span>
+					<a href="#" id="navSingup">注册</a>
+				</div>
+			</div>
+		</div>
+		<!-- end navigator -->
+		
+		<!-- 雪花动画效果 -->
+		<div id="snowMask" style="display: block;"></div>
+		<style type="text/css">
+			@keyframes snow {
+				0% {
+					background-position: 0 0, 0 0;
+				}
+				100% {
+					background-position: 500px 1000px, 500px 500px;
+				}
+			}
+			
+			@-webkit-keyframes snow {
+				0% {
+					background-position: 0 0, 0 0;
+				}
+				100% {
+					background-position: 500px 1000px, 500px 500px;
+				}
+			}
+			
+			#snowMask {
+				position: fixed;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				z-index: 999;
+				background: url('images/snow1.png'), url('images/snow2.png');
+				pointer-events: none;
+				-webkit-animation: snow 15s linear infinite;
+				animation: snow 15s linear infinite;
+			}
+		</style>
+		<script type="text/javascript">
+			(function() {
+				var snowMask = document.getElementById('snowMask');
+
+				function isIE() {
+					if(!!window.ActiveXObject || "ActiveXObject" in window)
+						return true;
+					else
+						return false;
+				}
+				snowMask.style.display = (!isIE()) ? "block" : "none";
+			})();
+		</script>
+		<!-- end snow-->
+		
+		<!-- vip_info start -->
+		<div class="banner">
+			<!-- 3D_slideshow start -->
+			<div id="for_wrap" class="for_warp">
+				<div id="wrap" class="wrap">
+					<div id="main" class="main">
+						<div id="circle_wrap" class="circle_wrap">
+							<div id="circle_dot" class="circle_dot"></div>
+							<div id="circle_line" class="circle_dot"></div>
+							<div class="circle" class="circle">
+								<div>夜幕安全</div>
+								<div>技能图谱</div>
+							</div>
+						</div>
+						<svg id="svg" class="svg" xmlns="http://w3.org/2000/svg" width="100%" height="100%"></svg>
+					</div>
+				</div>
+			</div>
+			<!-- end 3D_slideshow-->
+			
+			<div class="inf">
+				<div class="box one">
+					<i class="iconImg"></i>
+					<div class="text">
+						<span>365天随意观看海量视频资源</span>
+					</div>
+				</div>
+				<div class="box two">
+					<i class="iconImg"></i>
+					<div class="text">
+						<span>及时获得免费公开课信息</span>
+					</div>
+				</div>
+				<div class="box thr">
+					<i class="iconImg"></i>
+					<div class="text">
+						<span>VIP会员有特殊身份标识</span>
+					</div>
+				</div>
+				<div class="box fou">
+					<i class="iconImg"></i>
+					<div class="text">
+						<span>可在电脑、手机、iPad等多屏观看</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end vip_info -->
+		
+		<!-- vip_desc start -->
+		<div class="secP clear">
+			<div class="main clear">
+				<div class="title">
+					<i>&nbsp;</i>
+					<span>常见问题</span>
+				</div>
+				<div class="quesBox clear first-child">
+					<div class="ques clear">
+						<i class="headIcon">&nbsp;</i>
+						<span class="text"><a href="#17" target="_blank">什么是夜幕安全VIP会员？那么多视频在线观看是怎么回事？</a></span>
+					</div>
+					<div class="answ clear">
+						<span class="text ans"><a href="#17" target="_blank">VIP会员的视频库，是夜幕安全历年来的视频总和，截止到目前共有1000多集。视频中涉及到的知识点涵盖了实体班所有知识点。还包括讲师平时研究的新技术、新实例，从最基础的：HTML5移动端&amp;PC端布局、CSS3动画、3D交互特效、JS原理、JS基础、JS中级的DOMBOMEVENT、ajax数据交互……再到JS的面向对象、JS组件开发、JS模块化开发（seaJS）、正则表达式、Node.js、jQuery库实战教程、JQ源码分析、PC端布局实战、电商网站实战、HTML5+CSS3实战、移动端实战、交互动画教程、前端面试题、CANVAS及游戏、HTML5视频音频、HTML5地理位置信息、HTML5跨文档消息通信、HTML5本地离线存储、数学揭密之【三角函数、球面坐标系、锥面坐标系、柱面坐标系】、JS算法与数据结构、SVG开发、GIT与GITHUB、ANGULAR.JS、BACKBONE、HTML5游戏开发、微信企业网站开发……凡前端开发重要必备知识，这里应有尽有、无所不包！</a></span>
+						<i class="headIcon">&nbsp;</i>
+					</div>
+				</div>
+	
+				<div class="quesBox clear">
+					<div class="ques clear">
+						<i class="headIcon">&nbsp;</i>
+						<span class="text"><a href="#18" target="_blank">VIP会员和实体班课程有什么区别呢？</a></span>
+					</div>
+					<div class="answ clear">
+						<span class="text ans"><a href="#18" target="_blank">视频中涉及到的知识点涵盖了实体班所有知识点。但视频学习是自学形式，要求学员有毅力、能坚持、有学习方法、懂得向别人请教问题、并不断尝试做练习，这样至少经历8个月以上时间，才有可能学会。</a></span>
+						<i class="headIcon">&nbsp;</i>
+					</div>
+				</div>
+	
+				<div class="quesBox clear">
+					<div class="ques clear">
+						<i class="headIcon">&nbsp;</i>
+						<span class="text"><a href="#19" target="_blank">视频能否在移动端观看呢？<br>&nbsp;</a></span>
+					</div>
+					<div class="answ clear">
+						<span class="text ans"><a href="#19" target="_blank">是的，视频可以在手机微信内观看。具体观看方式：在微信内关注 “夜幕安全课堂” 公众号（或在微信内打开：</a><a href="http://www.miaov.com">www.miaov.com</a>），然后点击：“视频” ，即可按视频观看流程进行相应操作了。</span>
+						<i class="headIcon">&nbsp;</i>
+					</div>
+				</div>
+			</div>
+	
+			<div class="btnLine clear">
+			    <a href="" target="_blank">
+			        <div class="btn">更多问题</div>
+			    </a>
+			</div>
+		</div>
+		<!-- end vip_desc -->
+		
+		<!-- contact start-->
+		<div class="contact" id="contact">
+			<div class="cuBox" style="width: 116px; height: 48px;">
+				<h6 class="firstTitle">联系我们</h6>
+				<div class="cuNum">
+					<p class="qq">2582255 2582255</p>
+					<p class="qq2">2582255</p>
+					<p class="phone">010-2582255</p>
+				</div>
+				<h6>在线微信客服</h6>
+				<div class="weixin">
+					<dl>
+						<dt><img src="images/cool.jpg" alt=""></dt>
+						<dd>客服1</dd>
+					</dl>
+				</div>
+				<h6>客服在线时间</h6>
+				<div class="ontime">
+					<p>周一至周六夜午：9:00~12:00</p>
+					<p>下午：13:30~18:00</p>
+				</div>
+			</div>
+			<div class="psBox">
+				<h6 class="firstTitle">夜幕公众号</h6>
+				<img src="images/cool.jpg" alt="">
+			</div>
+		</div>
+		<!-- end contact-->
+		<!--<div class="test" style="margin: 100px auto;height: 500px;width:300px;"></div>-->
+
+		<!-- footer start -->
+		<div class="footer">
+			<div class="f_main">
+				<div class="f_logo fl">
+					<a href="/"></a>
+				</div>
+				<div class="f_copy fl">
+					<p>
+						<a href="#">dns/http监控平台</a>|
+						<a href="#">xss平台</a>|
+						<a href="#">乌云漏洞</a>|
+						<a href="#">社区</a>|
+						<a href="#">夜幕安全博客</a>|
+						<a href="#">在线漏洞检测</a>|
+						<!--<a href="#">加入我们</a>|<a href="#">网站地图</a><a href="#">联系我们</a>|-->
+						<a href="#">在线留言</a>|
+						<a href="#" target="_blank">常见问题</a>
+					</p><br>
+					<p><span>夜幕安全 版权所有</span></p>
+				</div>
+			</div>
+		</div>
+		<!-- end footer -->
+
+		<!-- back_top start -->
+		<div class="backTop" id="backTop" data-backtop="javascript">&nbsp;</div>
+		<!-- end back_top -->
+
+		<script type="text/javascript" src="js/contact.js"></script>
+		<script type="text/javascript" src="js/backtop.js"></script>
+		<script type="text/javascript" src="js/login.js" ></script>
+	</body>
+
+</html>

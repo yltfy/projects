@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/login.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/contact.css" />
+		<script type="text/javascript" src="js/common/utils.js" ></script>
+	</head>
+
+	<body>
+		<!-- navigator start -->
+		<div class="header">
+			<div class="topMain">
+				<h1 class="logo">
+					<a href="#">
+						<img src="images/moon.png">
+					</a>
+				</h1>
+				<div class="menu">
+					<ul>
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="service.html">主要服务</a>
+						</li>
+						<li>
+							<a href="profile.html">夜幕简介</a>
+						</li>
+						<li>
+							<a href="enter.html">在线报名</a>
+						</li>
+						<li>
+							<a href="vip.html">会员福利</a>
+						</li>
+					</ul>
+				</div>
+				<div class="loginBox">
+					<a href="" id="navLogin">登录</a>
+					<span>|</span>
+					<a href="" id="navSingup">注册</a>
+				</div>
+			</div>
+		</div>
+		<!-- end navigator -->
+
+		<!-- 雪花动画效果 -->
+		<div id="snowMask" style="display: block;"></div>
+		<style type="text/css">
+			@keyframes snow {
+				0% {
+					background-position: 0 0, 0 0;
+				}
+				100% {
+					background-position: 500px 1000px, 500px 500px;
+				}
+			}
+			
+			@-webkit-keyframes snow {
+				0% {
+					background-position: 0 0, 0 0;
+				}
+				100% {
+					background-position: 500px 1000px, 500px 500px;
+				}
+			}
+			
+			#snowMask {
+				position: fixed;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				z-index: 999;
+				background: url('images/snow1.png'), url('images/snow2.png');
+				pointer-events: none;
+				-webkit-animation: snow 15s linear infinite;
+				animation: snow 15s linear infinite;
+			}
+		</style>
+		<script type="text/javascript">
+			(function() {
+				var snowMask = document.getElementById('snowMask');
+
+				function isIE() {
+					if(!!window.ActiveXObject || "ActiveXObject" in window)
+						return true;
+					else
+						return false;
+				}
+				snowMask.style.display = (!isIE()) ? "block" : "none";
+			})();
+		</script>
+		<!-- end snow-->
+
+		<!-- content start -->
+		<div class="content bglogin">
+			<!-- sign_up start -->
+			<div class="main navSignup">
+				<div class="logo"><em>&nbsp;</em><img src="images/moon.png"></div>
+				<div class="title">注册夜幕安全</div>
+
+				<div class="inpline">
+					<label class="inpL"><span data-placeholder="javascript">请输入手机号</span><input id="phonereg-phone" type="text"></label>
+				</div>
+
+				<div class="inpline">
+					<label class="inpS">
+            			<span data-placeholder="javascript">请输入图片验证码</span>
+            			<input id="phonereg-imgcode" type="text">
+					</label>
+					<div class="img">
+						<img id="w0-image" src="" alt="图片无法加载" title="点击换图" style="cursor:pointer"> 
+					</div>
+				</div>
+				<div class="inpline">
+					<label class="inpS">
+						<span data-placeholder="javascript">请输入短信验证码</span>
+						<input id="phonereg-code" type="text">
+					</label>
+					<button type="button" id="phonereg-sendcode" class="btns">获取验证码</button>
+				</div>
+				<div class="inpline">
+					<label class="inpL"><span data-placeholder="javascript">请输入密码</span><input type="text" onfocus="this.type='password'" id="phonereg-pwd"></label>
+				</div>
+				<div class="inpline">
+					<button type="button" id="phonereg-submit" class="btn">确 认</button>
+				</div>
+				<div class="textline center">
+					<span>已有账号？<a href="#" id="loginRedirect">直接登录</a></span>
+				</div>
+				<div class="note">
+					<i class="noteIcon">&nbsp;</i>
+					<em>&nbsp;</em>
+					<span class="noteText">提示：2018年1月1日注册免费送vip券。</span>
+				</div>
+			</div>
+			<!-- end sign_up -->
+			
+			<!-- login start -->
+			<div class="main navLogin" style="padding-top: 176px; display: none;">
+				<div class="logo"><em>&nbsp;</em><img src="images/moon.png"></div>
+				<div class="title">登录夜幕安全</div>
+				<div class="inpline">
+					<label class="inpL"><span data-placeholder="javascript" style="opacity: 1; display: block;">请输入用户名/手机号</span><input type="text" id="login-account"></label>
+				</div>
+				<input type="hidden">
+				<div class="inpline">
+					<label class="inpL"><span data-placeholder="javascript" style="opacity: 1; display: block;">请输入密码</span><input type="password" onfocus="this.type='password'" id="login-pwd"></label>
+				</div>
+				<div class="inpline">
+					<button type="button" id="login-submit" class="btn">登 录</button>
+				</div>
+				<div class="textline">
+					<em><a href="/account/find/phone">忘记密码?</a></em>
+					<span>还没有账号？<a href="#" id="signRedirect">立即注册</a></span>
+				</div>
+			</div>
+			<!-- end login -->
+		</div>
+		<!-- end content-->
+
+		<!-- contact start-->
+		<div class="contact" id="contact">
+			<div class="cuBox" style="width: 116px; height: 48px;">
+				<h6 class="firstTitle">联系我们</h6>
+				<div class="cuNum">
+					<p class="qq">2582255 2582255</p>
+					<p class="qq2">2582255</p>
+					<p class="phone">010-2582255</p>
+				</div>
+				<h6>在线微信客服</h6>
+				<div class="weixin">
+					<dl>
+						<dt><img src="images/cool.jpg" alt=""></dt>
+						<dd>客服1</dd>
+					</dl>
+				</div>
+				<h6>客服在线时间</h6>
+				<div class="ontime">
+					<p>周一至周六夜午：9:00~12:00</p>
+					<p>下午：13:30~18:00</p>
+				</div>
+			</div>
+			<div class="psBox">
+				<h6 class="firstTitle">夜幕公众号</h6>
+				<img src="images/cool.jpg" alt="">
+			</div>
+		</div>
+		<!-- end contact-->
+
+		<!-- footer start -->
+		<div class="footer">
+			<div class="f_main">
+				<div class="f_logo fl">
+					<a href="/"></a>
+				</div>
+				<div class="f_copy fl">
+					<p>
+						<a href="#">dns/http监控平台</a>|
+						<a href="#">xss平台</a>|
+						<a href="#">乌云漏洞</a>|
+						<a href="#">社区</a>|
+						<a href="#">夜幕安全博客</a>|
+						<a href="#">在线漏洞检测</a>|
+						<!--<a href="#">加入我们</a>|<a href="#">网站地图</a><a href="#">联系我们</a>|-->
+						<a href="#">在线留言</a>|
+						<a href="#" target="_blank">常见问题</a>
+					</p><br>
+					<p><span>夜幕安全 版权所有</span></p>
+				</div>
+			</div>
+		</div>
+		<!-- end footer -->
+
+		<!-- back_top start -->
+		<div class="backTop" id="backTop" data-backtop="javascript">&nbsp;</div>
+		<!-- end back_top -->
+		<script type="text/javascript" src="js/login.js" ></script>
+		<script type="text/javascript">
+			var loginRedirect = document.getElementById("loginRedirect");
+			var signRedirect = document.getElementById("signRedirect");
+			var showSignup = getEleByClass(document, "navSignup")[0];				
+			var showLogin = getEleByClass(document, "navLogin")[0];
+			loginRedirect.onclick = function() {
+				showSignup.style.display = "none";
+				showLogin.style.display = "block";
+			}
+			
+			signRedirect.onclick = function() {
+				showSignup.style.display = "block";
+				showLogin.style.display = "none";
+			}
+		</script>
+	</body>
+
+</html>

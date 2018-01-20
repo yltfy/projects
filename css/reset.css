@@ -1,0 +1,111 @@
+/* =========================== reset start ================================= */
+@charset "utf-8";
+body,
+ul,
+ol,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input,
+select,
+textarea,
+form {
+	margin: 0;
+	padding: 0
+}
+
+html {
+	height: 100%
+}
+
+body {
+	font-family: tahoma, arial, 'Hiragino Sans GB', '微软雅黑', sans-serif;
+	color: #6f7b91;
+	font-size: 14px;
+	position: relative;
+	min-width: 1200px
+}
+
+li {
+	list-style: none
+}
+
+img {
+	border: 0;
+	display: block
+}
+
+input,
+select,
+textarea,
+button {
+	font-family: tahoma, arial, 'Hiragino Sans GB', '微软雅黑', sans-serif;
+	outline: 0;
+	border: 0;
+	background-color: transparent
+}
+
+em,
+i,
+dfn {
+	font-style: normal
+}
+
+textarea {
+	resize: none;
+	overflow: auto;
+	outline: 0
+}
+
+a {
+	text-decoration: none;
+	color: #666;
+	outline: 0
+}
+
+a:hover {
+	outline: 0
+}
+
+button {
+	cursor: pointer
+}
+
+button:focus {
+	border: 0;
+	outline: 0
+}
+
+pre {
+	white-space: pre-wrap !important;
+	word-wrap: break-word !important;
+	*white-space: normal !important;
+}
+
+.fl {
+	float: left
+}
+
+.fr {
+	float: right
+}
+
+.clear:after,
+.clear:before {
+	content: "";
+	display: table
+}
+
+.clear:after {
+	clear: both
+}
+
+.clear {
+	*zoom: 1;
+}

@@ -1,0 +1,25 @@
+/* =========================== index-inside start ================================= */
+@charset "utf-8";
+.loadBox{ background:#dcd5ce; height: 100%; width: 100%; position: relative;}
+.load1{ width:1000px; height:800px; position:absolute; top:50%; left:50%; margin:-400px 0px 0px -500px;  text-align:center;}
+.load1 span{ display:inline-block; height:100%; vertical-align:middle;}
+.load1 img{ vertical-align:middle; }
+.penBox{ width:600px; height:400px; position:absolute; top:50%; left:50%; margin:-200px 0px 0px -295px; display: none; }
+.pen1{ width:61px; height:62px; position:absolute; z-index:99;}
+.note1{
+    width:60px; height:28px; border-radius:5px;
+    background:#e15671; color:#FFF; text-align:center;
+    box-shadow:3px 3px 5px 0px rgba(218,206,191,0.5);
+    position:absolute; z-index:9;
+}
+.note1:before{
+    content:''; width:0px; height:0px;
+    border-width:5px;
+    border-style:dashed dashed solid dashed;
+    border-color:transparent transparent #e15671 transparent;
+    position:absolute; top:-10px; left:50%; margin-left:-5px;
+}
+.note1 span{ font-size:20px; line-height:28px;}
+.note1 em{ font-style:normal; font-size:14px;}
+#c{ position:absolute; top:50%; left:50%; margin:-200px 0px 0px -295px;}
+.body { display: none; }

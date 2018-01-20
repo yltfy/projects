@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/login.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/contact.css" />
+		<script type="text/javascript" src="js/common/utils.js"></script>
+	</head>
+
+	<body>
+		<!-- navigator start -->
+		<div class="header">
+			<div class="topMain">
+				<h1 class="logo">
+					<a href="#">
+						<img src="images/moon.png">
+					</a>
+				</h1>
+				<div class="menu">
+					<ul>
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="service.html">主要服务</a>
+						</li>
+						<li>
+							<a href="profile.html">夜幕简介</a>
+						</li>
+						<li>
+							<a href="enter.html">在线报名</a>
+						</li>
+						<li>
+							<a href="vip.html">会员福利</a>
+						</li>
+					</ul>
+				</div>
+				<div class="loginBox">
+					<a href="" id="navLogin">登录</a>
+					<span>|</span>
+					<a href="" id="navSingup">注册</a>
+				</div>
+			</div>
+		</div>
+		<!-- end navigator -->
+
+		<!-- 雪花动画效果 -->
+		<div id="snowMask" style="display: block;"></div>
+		<style type="text/css">
+			@keyframes snow {
+				0% {
+					background-position: 0 0, 0 0;
+				}
+				100% {
+					background-position: 500px 1000px, 500px 500px;
+				}
+			}
+			
+			@-webkit-keyframes snow {
+				0% {
+					background-position: 0 0, 0 0;
+				}
+				100% {
+					background-position: 500px 1000px, 500px 500px;
+				}
+			}
+			
+			#snowMask {
+				position: fixed;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				z-index: 999;
+				background: url('images/snow1.png'), url('images/snow2.png');
+				pointer-events: none;
+				-webkit-animation: snow 15s linear infinite;
+				animation: snow 15s linear infinite;
+			}
+		</style>
+		<script type="text/javascript">
+			(function() {
+				var snowMask = document.getElementById('snowMask');
+
+				function isIE() {
+					if(!!window.ActiveXObject || "ActiveXObject" in window)
+						return true;
+					else
+						return false;
+				}
+				snowMask.style.display = (!isIE()) ? "block" : "none";
+			})();
+		</script>
+		<!-- end snow-->
+
+		<!-- content start -->
+		<div class="content bglogin">
+			<!-- online start -->
+			<div class="online" style="width:100%; height: 400px; text-align: center;line-height: 400px;color: #fff; font-size: 28px;">
+				<span>在线报名</span>
+				<br />
+				<span>模板给我一个</span>
+			</div>
+			<!-- end online -->
+		</div>
+		<!-- end content-->
+
+		<!-- contact start-->
+		<div class="contact" id="contact">
+			<div class="cuBox" style="width: 116px; height: 48px;">
+				<h6 class="firstTitle">联系我们</h6>
+				<div class="cuNum">
+					<p class="qq">2582255 2582255</p>
+					<p class="qq2">2582255</p>
+					<p class="phone">010-2582255</p>
+				</div>
+				<h6>在线微信客服</h6>
+				<div class="weixin">
+					<dl>
+						<dt><img src="images/cool.jpg" alt=""></dt>
+						<dd>客服1</dd>
+					</dl>
+				</div>
+				<h6>客服在线时间</h6>
+				<div class="ontime">
+					<p>周一至周六夜午：9:00~12:00</p>
+					<p>下午：13:30~18:00</p>
+				</div>
+			</div>
+			<div class="psBox">
+				<h6 class="firstTitle">夜幕公众号</h6>
+				<img src="images/cool.jpg" alt="">
+			</div>
+		</div>
+		<!-- end contact-->
+
+		<!-- footer start -->
+		<div class="footer">
+			<div class="f_main">
+				<div class="f_logo fl">
+					<a href="/"></a>
+				</div>
+				<div class="f_copy fl">
+					<p>
+						<a href="#">dns/http监控平台</a>|
+						<a href="#">xss平台</a>|
+						<a href="#">乌云漏洞</a>|
+						<a href="#">社区</a>|
+						<a href="#">夜幕安全博客</a>|
+						<a href="#">在线漏洞检测</a>|
+						<!--<a href="#">加入我们</a>|<a href="#">网站地图</a><a href="#">联系我们</a>|-->
+						<a href="#">在线留言</a>|
+						<a href="#" target="_blank">常见问题</a>
+					</p><br>
+					<p><span>夜幕安全 版权所有</span></p>
+				</div>
+			</div>
+		</div>
+		<!-- end footer -->
+
+		<!-- back_top start -->
+		<div class="backTop" id="backTop" data-backtop="javascript">&nbsp;</div>
+		<!-- end back_top -->
+		<script type="text/javascript" src="js/login.js"></script>
+	</body>
+
+</html>
